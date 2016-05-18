@@ -73,9 +73,12 @@ namespace ContosoBooks.Models
 
                 Book book = context.Book.Where(x => x.Title.Equals(oldBookTitle, StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
 
-                book.Title = newBookTitle;
+                if (book != null)
+                {
+                    book.Title = newBookTitle;
+                    context.SaveChanges();
 
-                context.SaveChanges();
+                }
             }
         }
     }
