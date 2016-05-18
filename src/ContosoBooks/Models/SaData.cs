@@ -19,6 +19,8 @@ namespace ContosoBooks.Models
                     new Author { LastName = "Dickens", FirstMidName = "Charles" }).Entity;
                 var cervantes = context.Author.Add(
                     new Author { LastName = "Cervantes", FirstMidName = "Miguel" }).Entity;
+                var test = context.Author.Add(
+                    new Author { LastName = "TestLastName", FirstMidName = "TestFirstMidName" }).Entity;
 
                 context.Book.AddRange(
                     new Book()
@@ -52,8 +54,27 @@ namespace ContosoBooks.Models
                         Author = cervantes,
                         Price = 8.95M,
                         Genre = "Picaresque"
+                    },
+                    new Book()
+                    {
+                        Title = "TestBook",
+                        Year = 2016,
+                        Author = test,
+                        Price = 18.95M,
+                        Genre = "test genre"
                     }
                 );
+                context.SaveChanges();
+            }
+            else
+            {
+                string oldBookTitle = "fancier book";
+                string newBookTitle = "New Book";
+
+                Book book = context.Book.Where(x => x.Title.Equals(oldBookTitle, StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
+
+                book.Title = newBookTitle;
+
                 context.SaveChanges();
             }
         }
