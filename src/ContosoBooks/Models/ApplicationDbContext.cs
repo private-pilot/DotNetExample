@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Data.Entity;
-using ContosoBooks.Models;
+﻿using Microsoft.Data.Entity;
+using Microsoft.Data.Entity.Infrastructure;
 
 namespace ContosoBooks.Models
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : DbContext
     {
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -19,5 +14,10 @@ namespace ContosoBooks.Models
         }
         public DbSet<Book> Book { get; set; }
         public DbSet<Author> Author { get; set; }
+
+        public ApplicationDbContext(DbContextOptions options) : base(options)
+        {
+            var testOptions = options;
+        }
     }
 }
