@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="Microsoft.Dnx.Loader.dll" fullname="C:/Users/Developer/.dnx/runtimes/dnx-clr-win-x86.1.0.0-rc1-update1/bin/Microsoft.Dnx.Loader.dll" testcasecount="1" result="Passed" start-time="2016-05-19 04:19:51Z" end-time="2016-05-19 04:19:52Z" duration="1.087515" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="1" random-seed="1360157274">
+  <command-line><![CDATA["C:\Users\Developer\.dnx\runtimes\dnx-clr-win-x86.1.0.0-rc1-update1\bin\dnx.exe"  --appbase "C:\Users\Developer\Downloads\uscis\DotNetExample\test\ContosoBooksTest" "Microsoft.Dnx.ApplicationHost"  --configuration Debug "test" -wait]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1002" name="Microsoft.Dnx.Loader.dll" fullname="C:/Users/Developer/.dnx/runtimes/dnx-clr-win-x86.1.0.0-rc1-update1/bin/Microsoft.Dnx.Loader.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2016-05-19 04:19:51Z" end-time="2016-05-19 04:19:52Z" duration="1.087515" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="1">
+    <environment framework-version="3.2.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Developer\Downloads\uscis\DotNetExample\test\ContosoBooksTest" machine-name="WIN-07AH9H51I4K" user="Developer" user-domain="WIN-07AH9H51I4K" culture="en-US" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\Developer\Downloads\uscis\DotNetExample\test\ContosoBooksTest" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="_PID" value="6220" />
+      <property name="_APPDOMAIN" value="DefaultDomain" />
+    </properties>
+    <test-suite type="TestSuite" id="1003" name="ContosoBooksTest" fullname="ContosoBooksTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2016-05-19 04:19:51Z" end-time="2016-05-19 04:19:52Z" duration="1.080667" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="1">
+      <test-suite type="TestSuite" id="1004" name="ControllerTests" fullname="ContosoBooksTest.ControllerTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2016-05-19 04:19:51Z" end-time="2016-05-19 04:19:52Z" duration="1.077168" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="1">
+        <test-suite type="TestFixture" id="1000" name="BooksControllerTest" fullname="ContosoBooksTest.ControllerTests.BooksControllerTest" classname="ContosoBooksTest.ControllerTests.BooksControllerTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2016-05-19 04:19:51Z" end-time="2016-05-19 04:19:52Z" duration="1.043271" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="1001" name="GetBooksList" fullname="ContosoBooksTest.ControllerTests.BooksControllerTest.GetBooksList" methodname="GetBooksList" classname="ContosoBooksTest.ControllerTests.BooksControllerTest" runstate="Runnable" seed="798259755" result="Passed" start-time="2016-05-19 04:19:51Z" end-time="2016-05-19 04:19:52Z" duration="0.267306" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

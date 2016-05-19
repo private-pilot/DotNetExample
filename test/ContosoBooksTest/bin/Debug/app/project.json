@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "ContosoBooksTest": "1.0.0"
+  },
+  "frameworks": {
+    "dnx451": {}
+  },
+  "commands": {
+    "test": "ContosoBooksTest"
+  },
+  "entryPoint": "ContosoBooksTest",
+  "loadable": false
+}
