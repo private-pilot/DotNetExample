@@ -53,6 +53,18 @@ namespace ContosoBooks.Controllers
         {
             if (ModelState.IsValid)
             {
+                Author author = _context.Author.FirstOrDefault(x =>
+                    x.FirstMidName.Equals(book.AuthorFirstName) &&
+                    x.LastName.Equals(book.AuthorLastName));
+                if (author != null)
+                {
+                    book.AuthorID = author.AuthorID;
+                }
+                else
+                {
+                    return HttpBadRequest();
+                }
+                    
                 _context.Book.Add(book);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
