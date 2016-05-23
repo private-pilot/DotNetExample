@@ -34,8 +34,6 @@ This is useful if you have multiple runtimes of the same version but different r
 dnvm use
 `
 
-
-
 ## Starting the application
 
 Navigate to /src/ContosoBooks and run
@@ -47,3 +45,27 @@ dnx web
 The site should be accessible on http://localhost:5000
 
 To stop, hit `Ctrl` and `C`
+
+## Running NUnit tests
+
+__Note__: NUnit has preliminary (read: hacky) support for .NET 5, which the ContosoBooks project is written under. NUnitLite (a CLI runner of NUnit) is used to trigger the tests via command line. Upgrading to .NET Core (i.e. rc2) **will** break the tests.
+
+Navigate to test/ContosoBooksTest and run
+
+`
+dnx test
+`
+
+After the tests are done, any failures will be reported in the console. Adding Jenkins support for passing or failing jobs can be easily done. While NUnitLite does not support redirecting output under dnx, you can use
+
+`
+dnx test > out.txt
+`
+
+And then use `findstr` on the output file
+
+`
+findstr /C:"Overall result: Passed" out.txt
+`
+
+When a test fails, findstr will fail its search and set the environment variable ERROR_LEVEL to 1. This will allow Jenkins to mark the build as failed (as success requires 0)
