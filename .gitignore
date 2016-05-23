@@ -1,4 +1,12 @@
-
-src/ContosoBooks/bin/Debug/dnx451/ContosoBooks.exe
-
-src/ContosoBooks/bin/Debug/dnx451/osx.10.11-x64/ContosoBooks.exe
+.idea/
+test/serenity/.idea/
+src/ContosoBooks/bin/Debug/
+src/ContosoBooks/bin/Release/
+src/ContosoBooks/obj/Debug
+src/ContosoBooks/obj/Release
+test/ContosoBooks/bin/Debug/
+test/ContosoBooks/bin/Release
+test/ContosoBooks/obj/Debug
+test/ContosoBooks/obj/Release
+test/serenity/build/
+test/serenity/target/
