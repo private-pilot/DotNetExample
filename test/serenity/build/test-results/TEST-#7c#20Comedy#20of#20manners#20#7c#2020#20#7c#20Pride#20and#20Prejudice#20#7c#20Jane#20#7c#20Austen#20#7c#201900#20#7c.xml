@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| Comedy of manners | 20 | Pride and Prejudice | Jane | Austen | 1900 |" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-05-23T18:24:57" hostname="WIN-07AH9H51I4K" time="6.739">
+  <properties/>
+  <testcase name="Given the user is on the site's home page" classname="| Comedy of manners | 20 | Pride and Prejudice | Jane | Austen | 1900 |" time="0.0"/>
+  <testcase name="When the user clicks on the 'Books' tab" classname="| Comedy of manners | 20 | Pride and Prejudice | Jane | Austen | 1900 |" time="0.0"/>
+  <testcase name="And the user clicks on the Create New Book link" classname="| Comedy of manners | 20 | Pride and Prejudice | Jane | Austen | 1900 |" time="0.0"/>
+  <testcase name="And the user creates a new book with 'Comedy of manners', '20', 'Pride and Prejudice', 'Jane', 'Austen', and '1900'" classname="| Comedy of manners | 20 | Pride and Prejudice | Jane | Austen | 1900 |" time="0.0"/>
+  <testcase name="And the user clicks the Create book button" classname="| Comedy of manners | 20 | Pride and Prejudice | Jane | Austen | 1900 |" time="0.0"/>
+  <testcase name="Then the book with title 'Pride and Prejudice' should be visible on the Books Listing page" classname="| Comedy of manners | 20 | Pride and Prejudice | Jane | Austen | 1900 |" time="0.0"/>
+  <testcase name="classMethod" classname="| Comedy of manners | 20 | Pride and Prejudice | Jane | Austen | 1900 |" time="10.749"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
